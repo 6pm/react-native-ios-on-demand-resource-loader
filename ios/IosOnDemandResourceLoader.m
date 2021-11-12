@@ -2,8 +2,8 @@
 
 @interface RCT_EXTERN_MODULE(IosOnDemandResourceLoader, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(loadResourcesByTag:(string)tag
+                 withResolver:(@escaping)resolve
+                 withRejecter:(@escaping)reject)
 
 @end

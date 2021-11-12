@@ -1,6 +1,6 @@
 {
   "name": "react-native-ios-on-demand-resource-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "on demand resources loader module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

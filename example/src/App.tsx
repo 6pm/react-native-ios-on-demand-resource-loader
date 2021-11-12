@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-ios-on-demand-resource-loader';
+import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    loadResourcesByTag('asset_tag').then(setResult);
   }, []);
 
   return (
