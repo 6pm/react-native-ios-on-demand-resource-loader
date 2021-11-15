@@ -1,19 +1,13 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text, NativeModules, Button } from 'react-native';
-// import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
+import { StyleSheet, View, Text, Button } from 'react-native';
+import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
-  console.log(
-    'NativeModules :>> ',
-    NativeModules.IosOnDemandResourceLoader.loadResourcesByTag
-  );
 
   const loadTag1 = () => {
-    NativeModules.IosOnDemandResourceLoader.loadResourcesByTag('img_1');
-    // .then(console.log)
-    // .catch(console.log);
+    loadResourcesByTag('img_1').then(console.log).catch(console.log);
   };
 
   return (
