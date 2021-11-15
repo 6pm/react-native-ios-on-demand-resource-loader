@@ -17,6 +17,6 @@ const IosOnDemandResourceLoader = NativeModules.IosOnDemandResourceLoader
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return IosOnDemandResourceLoader.multiply(a, b);
+export function loadResourcesByTag(tag: string): Promise<any> {
+  return IosOnDemandResourceLoader.loadResourcesByTag(tag);
 }

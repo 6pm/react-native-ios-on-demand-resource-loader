@@ -1,17 +1,24 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
+import { StyleSheet, View, Text, NativeModules, Button } from 'react-native';
+// import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
+  console.log(
+    'NativeModules :>> ',
+    NativeModules.IosOnDemandResourceLoader.loadResourcesByTag
+  );
 
-  React.useEffect(() => {
-    loadResourcesByTag('asset_tag').then(setResult);
-  }, []);
+  const loadTag1 = () => {
+    NativeModules.IosOnDemandResourceLoader.loadResourcesByTag('img_1');
+    // .then(console.log)
+    // .catch(console.log);
+  };
 
   return (
     <View style={styles.container}>
+      <Button title="load resource with tag: img_1" onPress={loadTag1} />
       <Text>Result: {result}</Text>
     </View>
   );
