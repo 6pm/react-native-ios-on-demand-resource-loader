@@ -1,21 +1,23 @@
 # react-native-ios-on-demand-resource-loader
 
-on demand resources loader module
+React native on demand resources loader module. Works only on ios
 
 ## Installation
 
 ```sh
-npm install react-native-ios-on-demand-resource-loader
+yarn install react-native-ios-on-demand-resource-loader
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-ios-on-demand-resource-loader";
+import { loadResourcesByTag } from 'react-native-ios-on-demand-resource-loader';
 
 // ...
 
-const result = await multiply(3, 7);
+loadResourcesByTag('img_1')
+  .then(console.log)
+  .catch(console.log);
 ```
 
 ## Contributing

@@ -28,6 +28,10 @@ class IosOnDemandResourceLoader: NSObject {
              }
          })
 
-     }
+    }
+
+    func cancelRequest() {
+      self.request?.progress.cancel()
+    }
 
 }
