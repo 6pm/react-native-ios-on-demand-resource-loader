@@ -16,6 +16,10 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* IosOnDemandResourceLoaderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IosOnDemandResourceLoaderExampleTests.m */; };
 		4C39C56BAD484C67AA576FFA /* libPods-IosOnDemandResourceLoaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3E69C5B9553B26FBA2DF04 /* libPods-IosOnDemandResourceLoaderExample.a */; };
+		4F6338F92744156500D69E22 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6338F82744156500D69E22 /* File.swift */; };
+		4F6338FA2744156500D69E22 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6338F82744156500D69E22 /* File.swift */; };
+		4F6338FB2744156500D69E22 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6338F82744156500D69E22 /* File.swift */; };
+		4F6338FC2744156500D69E22 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6338F82744156500D69E22 /* File.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,11 @@
 		2D02E47B1E0B4A5D006451C7 /* IosOnDemandResourceLoaderExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IosOnDemandResourceLoaderExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* IosOnDemandResourceLoaderExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IosOnDemandResourceLoaderExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F7ED3B7971BE374F7B8635 /* Pods-IosOnDemandResourceLoaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosOnDemandResourceLoaderExample.debug.xcconfig"; path = "Target Support Files/Pods-IosOnDemandResourceLoaderExample/Pods-IosOnDemandResourceLoaderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		4F6338F42744156400D69E22 /* IosOnDemandResourceLoaderExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosOnDemandResourceLoaderExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F6338F52744156400D69E22 /* IosOnDemandResourceLoaderExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosOnDemandResourceLoaderExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F6338F62744156400D69E22 /* IosOnDemandResourceLoaderExample-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosOnDemandResourceLoaderExample-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F6338F72744156400D69E22 /* IosOnDemandResourceLoaderExample-tvOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosOnDemandResourceLoaderExample-tvOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F6338F82744156500D69E22 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = IosOnDemandResourceLoaderExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA3E69C5B9553B26FBA2DF04 /* libPods-IosOnDemandResourceLoaderExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosOnDemandResourceLoaderExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00ACF0FDA8BF921659E2F9A /* Pods-IosOnDemandResourceLoaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosOnDemandResourceLoaderExample.release.xcconfig"; path = "Target Support Files/Pods-IosOnDemandResourceLoaderExample/Pods-IosOnDemandResourceLoaderExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +126,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				4F6338F82744156500D69E22 /* File.swift */,
+				4F6338F42744156400D69E22 /* IosOnDemandResourceLoaderExample-Bridging-Header.h */,
+				4F6338F52744156400D69E22 /* IosOnDemandResourceLoaderExampleTests-Bridging-Header.h */,
+				4F6338F62744156400D69E22 /* IosOnDemandResourceLoaderExample-tvOS-Bridging-Header.h */,
+				4F6338F72744156400D69E22 /* IosOnDemandResourceLoaderExample-tvOSTests-Bridging-Header.h */,
 			);
 			name = IosOnDemandResourceLoaderExample;
 			sourceTree = "<group>";
@@ -269,17 +283,20 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1310;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1310;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1310;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -455,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* IosOnDemandResourceLoaderExampleTests.m in Sources */,
+				4F6338FA2744156500D69E22 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4F6338F92744156500D69E22 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				4F6338FB2744156500D69E22 /* File.swift in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCD954D1E0B4F2C00145EB5 /* IosOnDemandResourceLoaderExampleTests.m in Sources */,
+				4F6338FC2744156500D69E22 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +524,9 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -518,6 +541,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativeiosondemandresourceloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosOnDemandResourceLoaderExample.app/IosOnDemandResourceLoaderExample";
 			};
 			name = Debug;
@@ -525,7 +551,9 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = IosOnDemandResourceLoaderExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -537,6 +565,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativeiosondemandresourceloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosOnDemandResourceLoaderExample.app/IosOnDemandResourceLoaderExample";
 			};
 			name = Release;
@@ -558,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativeiosondemandresourceloader;
 				PRODUCT_NAME = IosOnDemandResourceLoaderExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -580,6 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.reactnativeiosondemandresourceloader;
 				PRODUCT_NAME = IosOnDemandResourceLoaderExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -591,6 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -607,6 +640,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.IosOnDemandResourceLoaderExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -618,6 +654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -634,6 +671,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.IosOnDemandResourceLoaderExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -642,8 +681,10 @@
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -660,6 +701,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.IosOnDemandResourceLoaderExample-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-tvOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosOnDemandResourceLoaderExample-tvOS.app/IosOnDemandResourceLoaderExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -668,8 +712,10 @@
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -686,6 +732,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.IosOnDemandResourceLoaderExample-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IosOnDemandResourceLoaderExample-tvOSTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosOnDemandResourceLoaderExample-tvOS.app/IosOnDemandResourceLoaderExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
