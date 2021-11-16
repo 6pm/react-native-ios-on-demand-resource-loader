@@ -2,6 +2,19 @@
 
 React native on demand resources loader module. Works only on ios
 
+## How to run example project
+```sh
+# install dependencies in the root folder
+yarn install
+
+# install pods
+cd example/ios
+pod install
+
+# go to the "example" folder and run the app
+yarn ios
+```
+
 ## Installation
 
 ```sh
